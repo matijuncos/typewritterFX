@@ -1,0 +1,206 @@
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+/* NAV BAR   */
+
+.navmain {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  top: 0;
+  height: 50px;
+  background-color: #333;
+  position: fixed;
+  z-index: 4;
+}
+
+.logocontainer {
+  width: 180px;
+  height: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.logocontainer img {
+  height: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: block;
+  float: left;
+
+  align-items: center;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  padding: 0 30px;
+  height: 100%;
+  text-decoration: none;
+  align-items: center;
+}
+.nav-menu li a:hover {
+  color: rgb(161, 161, 161);
+}
+.search {
+  margin: 0;
+  height: 20px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.searchbtn {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.searchbtn i {
+  color: white;
+}
+/*        BANNER           */
+
+.banner1 {
+  margin-top: 30px;
+  background-image: url(coding.jpg);
+  height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+.bannercontent {
+  background-color: rgba(199, 196, 196, 0.514);
+  margin: 0;
+  padding: 0px 0px 10px 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bannercontent h1 {
+  font-size: 4.5em;
+  margin: 0;
+  width: 100%;
+}
+.bannercontent h2 {
+  font-size: 3.5em;
+  margin: 0;
+  width: 100%;
+}
+.bannercontent h3 {
+  font-size: 3em;
+  padding-top: 15px;
+  margin: 0;
+  width: 100%;
+}
+
+.btncontacto {
+  border: none;
+  font-family: "Oswald";
+  border-radius: 30px;
+}
+
+/*            BOTON DE SCROLLDOWN       */
+
+.ct-btn-scroll {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  text-align: center;
+  bottom: 35%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 50px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  /*booton de scroll*/
+
+  0% {
+    top: 545px;
+  }
+  100% {
+    top: 550px;
+  }
+}
+/* NOSOTROS             */
+
+.nosotros {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  background-color: #9aacb7;
+  padding-bottom: 20px;
+  box-shadow: 20px 20px 60px #83929c, -20px -20px 60px #b1c6d2;
+}
+.nosotros h1 {
+  margin: 0;
+  padding: 25px 0;
+}
+.cardcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+  background-color: #859199;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px #83929c, -20px -20px 60px #b1c6d2;
+}
+
+.card {
+  height: 400px;
+  width: 250px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #8e9ba4, #78838a);
+  box-shadow: 28px -28px 55px #717b82, -28px 28px 55px #99a7b0;
+  transition: width 1s;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.card:hover {
+  width: 280px;
+}
+
+.card img {
+  width: 40%;
+  border-radius: 50%;
+}
+.redes a i {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  color: rgb(23, 29, 43);
+  padding: 5px;
+}
+
+/*  SERVICIOS          */
